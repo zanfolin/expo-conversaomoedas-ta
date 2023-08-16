@@ -9,12 +9,12 @@ export default function App() {
   const [valorConvertido, setValorConvertido] = useState('')
 
   const buscarHandle = async () => {
-    let URL = `https://economia.awesomeapi.com.br/last/USD-BRL`
+    let URL = `https://economia.awesomeapi.com.br/last/${moedaOrigem}-${moedaDestino}`
     try {
       let page = await fetch(URL)
       let json = await page.json()
       console.log(json)
-      console.log(json[ˋUSDBRLˋ].high)
+      let indice = parseFloat(json[`${moedaOrigem}${moedaDestino}`].high)
     } catch (error) {
       
     }
