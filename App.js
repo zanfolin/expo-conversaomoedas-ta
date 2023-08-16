@@ -14,6 +14,7 @@ export default function App() {
       let page = await fetch(URL)
       let json = await page.json()
       console.log(json)
+      console.log(json[ˋUSDBRLˋ].high)
     } catch (error) {
       
     }
