@@ -31,7 +31,7 @@ export default function App() {
   
   return (
     <View style={styles.container}>
-      <Text>Conversor de Moedas</Text>
+      <Text>Conversor de Moedas - 1o. </Text>
       <View>
         <Text>Moeda 1</Text>
         <Picker
